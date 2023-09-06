@@ -448,6 +448,7 @@
     color: #404040;
     text-align: center;
 }
+.bottom-area .policy a {font-weight:bold;}
 .bottom-area .footer-item a:hover {
     text-decoration:underline;
 }
