@@ -1,0 +1,168 @@
+/* 공통소스 */
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+/* dpi -> 도트퍼 인치 */
+.setting-wrap .btn-up .up,
+.setting-wrap .btn-setting .setting,
+.footer .mid-area .top-wrap a::after,
+.sc-recipe  .theme-area .control-area .btn-next::after,
+.sc-recipe  .theme-area .control-area .btn-prev::before,
+.ac-whale a::after,
+.mobile-link::after,
+.mobile-link .naver,
+.now-area h2::before,
+.ac-board .eng-dic .search::after,
+.ac-board .board-item .papago,
+.ac-stock .stock-item .more,
+.ac-stock .stock-item .down,
+.ac-stock .stock-wrap .down,
+.ac-stock .header-area .refresh,
+.ac-stock .header-area .info,
+.ac-weather .header-area .compare::before ,
+.group-control .control-area .btn-next::after,
+.group-control .control-area .btn-prev::before,
+.sc-login .link-login::before,
+.header .group-nav [class*="ic-"]::before,
+.header .group-nav [class*="ic-"]::after,
+.header .group-search [class*="btn-"]::after,
+.header .util-area>*::before, .ic-triangle{
+    background-image: url(../images/sp1.png);
+    background-repeat: no-repeat;
+    background-size: 434px;
+}
+.sc-shop .group-place .my-item [class*="ic-"]::before{
+    background-image: url(../images/sp2.png);
+    background-repeat: no-repeat;
+    background-size: 134px;
+}
+.ac-weather .content-area .right-wrap .pic::before,
+.ac-weather .left-wrap .top-box .weather::before{
+    background-image: url(../images/sp3.png);
+    background-repeat: no-repeat;
+    background-size: 641px;
+}
+
+.btn-tab:hover{
+    text-decoration:underline;
+}
+
+
+
+/* .sc-login */
+.sc-login{
+    padding: 21px 20px 18px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.sc-login .login-msg{
+    font-size: 15px;
+}
+
+.sc-login .link-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 13px;
+    padding: 17px 0;
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: 4px;
+    background-color: #03c75a;
+    box-shadow: 0 2px 4px 0 rgba(3,199,90,.12);
+    color: #fff;
+    font-size: 15px;
+}
+.sc-login .link-login:before{
+    background-position: -120px -166px;
+    width: 72px;
+    height: 14px;
+    content: '';
+}
+
+.sc-login .sub-area{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    font-size:14px;
+}
+.sc-login .sub-area a {color:#606060;}
+.sc-login .sub-area a:hover {
+    text-decoration:underline;
+}
+
+.sc-login .sub-area a + a:before {
+    content:"";
+    display:inline-block;
+    vertical-align:top;
+    width: 1px;
+    height: 12px;
+    background: #d3d5d7;
+    margin:4px 12px 0;
+}
+
+
+/* group-control 공통 */
+.group-control{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 10px 0 11px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.group-control .control-area{
+    display: flex;
+}
+.group-control .control-area .btn-prev,
+.group-control .control-area .btn-next{
+    width: 36px;
+    height: 36px;
+    border: 1px solid #dadcdf;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.06);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.group-control .control-area .btn-prev::before{
+    content: '';
+    display: block;
+    background-position: -104px -389px;
+    width: 10px;
+    height: 12px;
+    transform: rotate(180deg);
+    margin: auto;
+}
+.group-control .control-area .btn-next::after{
+    content: '';
+    display: block;
+    background-position: -115px -389px;
+    width: 10px;
+    height: 12px;
+    margin: auto;
+}
+.group-control .control-area .fraction{
+    display: flex;
+    justify-content:space-between;
+    color: #606060;
+    min-width: 156px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 35px;
+    font-weight: 600;
+    vertical-align: top;
+}
+.group-control .control-area  .fraction span{color: #606060;}
+.group-control .control-area  .fraction .more{padding-right: 4px;}
+
+.group-control .control-area  .fraction .total {color: rgba(96,96,96,.5);}
